@@ -1,0 +1,13 @@
+type Author{
+    id: ID!
+    username: String
+    firstname: String
+    lastname: String
+    displayName: String
+    email: String
+}
+
+type Query {
+    findAllAuthor: [Author]!
+    findAuthorById(id: ID!): Author!
+}
